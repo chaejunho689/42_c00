@@ -1,1 +1,2 @@
-git log | grep -w "commit" | sed 's/commit//' | tail -n 5
+git log --pretty=format:'%H' -n 5 
+echo ""
