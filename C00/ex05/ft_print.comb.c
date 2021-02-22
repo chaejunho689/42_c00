@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_print.comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jchae <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/22 19:23:50 by jchae             #+#    #+#             */
-/*   Updated: 2021/02/22 19:24:04 by jchae            ###   ########.fr       */
+/*   Created: 2021/02/22 19:25:29 by jchae             #+#    #+#             */
+/*   Updated: 2021/02/22 19:25:41 by jchae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,39 +17,30 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_display(int a, int b)
-{
-	char one;
-	char two;
-	char three;
-	char four;
-
-	ft_putchar(one = '0' + a / 10);
-	ft_putchar(two = '0' + a % 10);
-	ft_putchar(' ');
-	ft_putchar(three = '0' + b / 10);
-	ft_putchar(four = '0' + b % 10);
-	if (!(a == 98 && b == 99))
-	{
-		ft_putchar(',');
-		ft_putchar(' ');
-	}
-}
-
-void	ft_print_comb2(void)
+void	ft_print_comb(void)
 {
 	int a;
 	int b;
+	int c;
 
-	a = 0;
-	while (a <= 98)
+	a = 0 - 1;
+	while (++a <= 7)
 	{
-		b = a + 1;
-		while (b <= 99)
+		b = a;
+		while (++b <= 8)
 		{
-			ft_display(a, b);
-			b++;
+			c = b;
+			while (++c <= 9)
+			{
+				ft_putchar('0' + a);
+				ft_putchar('0' + b);
+				ft_putchar('0' + c);
+				if (a != 7)
+				{
+					ft_putchar(',');
+					ft_putchar(' ');
+				}
+			}
 		}
-		a++;
 	}
 }

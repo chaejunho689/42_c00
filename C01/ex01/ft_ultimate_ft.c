@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jchae <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/22 23:17:30 by jchae             #+#    #+#             */
-/*   Updated: 2021/02/23 00:02:29 by jchae            ###   ########.fr       */
+/*   Created: 2021/02/23 00:13:04 by jchae             #+#    #+#             */
+/*   Updated: 2021/02/23 00:35:39 by jchae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	ft_ultimate(int *********nbr)
 {
-	char i;
+	*********nbr = 42;
+}
 
-	i = 'a';
-	while (i <= 'z')
-	{
-		write(1, &i, 1);
-		i++;
-	}
+int		main(void)
+{
+	int n;
+	ft_ultimate(n);
+	return (0);
 }
