@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jchae <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: jchae <jchae@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/22 19:23:50 by jchae             #+#    #+#             */
-/*   Updated: 2021/02/22 19:24:04 by jchae            ###   ########.fr       */
+/*   Created: 2021/02/24 23:17:45 by jchae             #+#    #+#             */
+/*   Updated: 2021/02/24 23:17:48 by jchae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdio.h>
 
 void	ft_putchar(char c)
 {
@@ -52,4 +53,10 @@ void	ft_print_comb2(void)
 		}
 		a++;
 	}
+}
+
+int main(void)
+{
+    ft_print_comb2();
+    return 0;
 }

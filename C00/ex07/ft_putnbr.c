@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jchae <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: jchae <jchae@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/22 18:43:57 by jchae             #+#    #+#             */
-/*   Updated: 2021/02/22 19:24:29 by jchae            ###   ########.fr       */
+/*   Created: 2021/02/24 23:25:09 by jchae             #+#    #+#             */
+/*   Updated: 2021/02/25 10:34:43 by jchae            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,10 @@ void	ft_putnbr(int nb)
 		ft_putchar('0' + a);
 		ft_putchar('0' + b);
 	}
+}
+
+int main (void)
+{
+	ft_putnbr(432);
+	return 0;
 }
